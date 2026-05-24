@@ -1,0 +1,37 @@
+{
+  "company": {
+    "name": "NGPS Multitech Pvt. Ltd.",
+    "tagline": "Support That Builds Trust",
+    "description": "Your trusted partner for electronics after-sales support, bulk packaging, returns management, and OEM services across India.",
+    "email": "info@ngpsmultitech.com",
+    "phone": "+91 9818867565",
+    "location": "New Delhi, India"
+  },
+
+  "services": [
+    {
+      "title": "Bulk Packaging",
+      "desc": "Structured packaging with unit verification, shrink wrapping, and master carton packing.",
+      "icon": "📦"
+    },
+    {
+      "title": "Returns Management",
+      "desc": "Inspection, refurbishment, resale, and eco-friendly disposal.",
+      "icon": "🔄"
+    },
+    {
+      "title": "OEM Services",
+      "desc": "End-to-end product sourcing, pricing strategy, and shipment management.",
+      "icon": "⚙️"
+    }
+  ],
+
+  "process": [
+    "Receive Finished Units",
+    "Unit Verification",
+    "Gift Box Packing",
+    "Shrink Wrapping",
+    "Master Carton Packing",
+    "Labelling & Dispatch Ready"
+  ]
+}

@@ -1,0 +1,14 @@
+<section id="process" class="section text-center">
+  <h2 class="section-title">Our Process</h2>
+
+  <div class="timeline">
+
+    @for (step of steps; track $index; let i = $index) {
+      <div class="timeline-item" data-aos="zoom-in">
+        <div class="circle">{{ i + 1 }}</div>
+        <p>{{ step }}</p>
+      </div>
+    }
+
+  </div>
+</section>

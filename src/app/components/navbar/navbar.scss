@@ -1,0 +1,45 @@
+
+.custom-nav {
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+   padding: 8px 0;
+}
+.nav-link {
+  color:  #0a2540 !important;
+  font-weight: 500;
+  margin-left: 20px;
+  position: relative;
+}
+
+
+
+.nav-link:hover {
+  color: #ff6b00 !important;
+}
+
+/* 🔥 underline animation */
+.nav-link::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: var(--accent-orange);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.logo-img {
+  height: 50px;     /* ✅ control height */
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}

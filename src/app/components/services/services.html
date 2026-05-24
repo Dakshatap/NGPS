@@ -1,0 +1,19 @@
+<section id="services" class="section text-center">
+  <h2 class="section-title">Our Services</h2>
+
+  <div class="container">
+    <div class="row">
+
+      @for (s of services; track $index) {
+        <div class="col-md-4">
+          <div class="service-card" data-aos="fade-up">
+            <div class="icon">{{ s.icon }}</div>
+            <h4>{{ s.title }}</h4>
+            <p>{{ s.desc }}</p>
+          </div>
+        </div>
+      }
+
+    </div>
+  </div>
+</section>

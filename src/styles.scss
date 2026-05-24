@@ -1,0 +1,23 @@
+
+
+:root {
+  --primary-blue: #0a2540;
+  --accent-orange: #ff6b00;
+  --text-dark: #1a1a1a;
+  --light-bg: #f8f9fa;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+}
+
+.section {
+  padding: 100px 20px;   /* ⬅ increase spacing */
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}

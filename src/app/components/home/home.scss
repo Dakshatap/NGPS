@@ -1,0 +1,59 @@
+.hero {
+  height: 100vh;
+  background: url('/assets/icons/background-banner.png') center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 OEL STYLE GRADIENT OVERLAY */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(10, 37, 64, 0.9),
+    rgba(10, 37, 64, 0.6)
+  );
+}
+
+/* TEXT */
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  animation: fadeUp 1s ease;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  color: #ddd;
+  margin-top: 15px;
+}
+
+/* BUTTON */
+.hero-btn {
+  margin-top: 30px;
+  background: var(--accent-orange);
+  border-radius: 30px;
+  padding: 12px 30px;
+  border: none;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

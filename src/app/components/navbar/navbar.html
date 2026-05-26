@@ -2,9 +2,10 @@
   <div class="container">
 
     <!-- Logo -->
-<a class="navbar-brand">
-  <img src="assets/icons/logo.png" class="logo-img" />
-</a>
+    <a class="navbar-brand" (click)="scrollToSection('home')">
+      <img src="assets/icons/logo.png" class="logo-img" />
+    </a>
+
     <!-- Toggle (mobile) -->
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
       ☰
@@ -12,22 +13,22 @@
 
     <!-- Menu -->
     <div class="collapse navbar-collapse justify-content-end" id="nav">
-      <ul class="navbar-nav gap-4">   <!-- ✅ GAP ADDED -->
+      <ul class="navbar-nav gap-4">
 
         <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" (click)="scrollToSection('home')">Home</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#services">Services</a>
+          <a class="nav-link" (click)="scrollToSection('services')">Services</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#process">Process</a>
+          <a class="nav-link" (click)="scrollToSection('process')">Process</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" (click)="scrollToSection('contact')">Contact</a>
         </li>
 
       </ul>

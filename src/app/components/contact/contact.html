@@ -47,18 +47,77 @@ New Delhi -110077
     </div>
 
     <!-- RIGHT: FORM -->
-    <div class="contact-form">
+ <div class="contact-form">
 
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <input type="text" placeholder="Subject" />
-        <textarea placeholder="Your Message" rows="5"></textarea>
+  <form [formGroup]="contactForm" (ngSubmit)="sendMessage()">
 
-        <button type="submit">Send Message</button>
-      </form>
+    <!-- NAME -->
+    <input
+      type="text"
+      placeholder="Your Name"
+      formControlName="name"
+    />
 
-    </div>
+    <small *ngIf="submitted && f['name'].errors?.['required']">
+      Name is required
+    </small>
+
+    <small *ngIf="submitted && f['name'].errors?.['minlength']">
+      Minimum 3 characters required
+    </small>
+
+    <!-- EMAIL -->
+    <input
+      type="email"
+      placeholder="Your Email"
+      formControlName="email"
+    />
+
+    <small *ngIf="submitted && f['email'].errors?.['required']">
+      Email is required
+    </small>
+
+    <small *ngIf="submitted && f['email'].errors?.['email']">
+      Enter valid email
+    </small>
+
+    <!-- SUBJECT -->
+    <input
+      type="text"
+      placeholder="Subject"
+      formControlName="subject"
+    />
+
+    <small *ngIf="submitted && f['subject'].errors?.['required']">
+      Subject is required
+    </small>
+
+    <!-- MESSAGE -->
+    <textarea
+      placeholder="Your Message"
+      rows="5"
+      formControlName="message">
+    </textarea>
+
+    <small *ngIf="submitted && f['message'].errors?.['required']">
+      Message is required
+    </small>
+
+    <small *ngIf="submitted && f['message'].errors?.['minlength']">
+      Minimum 10 characters required
+    </small>
+
+    <button type="submit" [disabled]="isSending">
+      {{ isSending ? 'Sending...' : 'Send Message' }}
+    </button>
+
+    <p class="success-msg" *ngIf="successMessage">
+      {{ successMessage }}
+    </p>
+
+  </form>
+
+</div>
 
   </div>
 

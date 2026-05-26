@@ -87,7 +87,24 @@
   background: #e65c00;
 }
 
+small {
+  color: red;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
 
+.success-msg {
+  color: green;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
